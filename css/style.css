@@ -1,7 +1,39 @@
+@font-face {
+  font-family: 'Open Sauce Black';
+  src: url('../fonts/OpenSauceBlack.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sauce SemiBold';
+  src: url('../fonts/OpenSauceSemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/MontserratMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/MontserratRegular.ttf') format('truetype');
+}
+
 body {
-  font-family: "Poppins", sans-serif;
-  color: #0c0c0c;
-  background-color: #E1F4F3 ;
+  font-family: 'Montserrat Medium', sans-serif;
+  color: #000000;;
+  background-color: #00008B ;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sauce Black', sans-serif; /* Títulos */
+}
+
+.subtitle, .heading_container h2 {
+  font-family: 'Open Sauce SemiBold', sans-serif; /* Subtítulos */
+}
+
+.small-text, .caption {
+  font-family: 'Montserrat Regular', sans-serif; /* Legendas */
+  font-size: 0.875rem; /* Ajuste para textos pequenos */
 }
 
 .layout_padding {
@@ -42,7 +74,8 @@ body {
 }
 
 .heading_container h2 {
-  position: relative;
+  text-align: center;
+  align-items: center;
   font-weight: bold;
 }
 
@@ -51,7 +84,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #E1F4F3;
+  background-color: #3b8cde;
   top: 50%;
   right: -30px;
   border-radius: 100%;
@@ -63,7 +96,7 @@ body {
 .hero_area {
   height: 98vh;
   position: relative;
-  background-image: url(../images/bg1.jpg);
+  background-image: url(../images/bg.png);
   background-size: cover;
   background-position: bottom;
 }
@@ -71,12 +104,12 @@ body {
 .sub_page .hero_area {
   height: auto;
   background: none;
-  background-color: #E1F4F3;
+  background-color: #406e9b;
 }
 
 .sub_page .footer_bg {
   background: none;
-  background-color: #4A4A4A;
+  background-color: #000000;
   padding-top: 45px;
 }
 
@@ -92,13 +125,13 @@ body {
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 3px 15px;
   margin: 10px 15px;
-  color: #000000;
+  color: #FFFFFF;
   text-align: center;
   border-radius: 20px;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link, .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  background-color: #4A4A4A ;
+  background-color: #195da2 ;
 }
 
 a,
@@ -137,7 +170,7 @@ a:focus {
 .navbar-brand span {
   font-size: 24px;
   font-weight: 700;
-  color: #4A4A4A ;
+  color: #000000; ;
   text-transform: uppercase;
 }
 
@@ -242,7 +275,7 @@ a:focus {
 }
 
 .slider_section .detail_box {
-  color: #706C61;
+  color: #85b7e9;
 }
 
 .slider_section .detail_box h1 {
@@ -264,25 +297,25 @@ a:focus {
 .slider_section .detail_box .btn-box a.btn-1 {
   display: inline-block;
   padding: 8px 0;
-  background-color: #777777 ;
-  color: #ffffff;
+  background-color: #195da2 ;
+  color: #FFFFFF;
   border-radius: 30px;
 }
 
 .slider_section .detail_box .btn-box a.btn-1:hover {
-  background-color: #b4abab ;
+  background-color: #3b8cde ;
 }
 
 .slider_section .detail_box .btn-box a.btn-2 {
   display: inline-block;
   padding: 8px 0;
-  background-color: #777777;
-  color: #000000;
+  background-color: #195da2;
+  color: #FFFFFF;
   border-radius: 30px;
 }
 
 .slider_section .detail_box .btn-box a.btn-2:hover {
-  background-color: #777777;
+  background-color: #3b8cde;
 }
 
 .slider_section .img-box img {
@@ -330,7 +363,7 @@ a:focus {
 
 .slider_section .carousel_btn-container .carousel-control-prev:hover,
 .slider_section .carousel_btn-container .carousel-control-next:hover {
-  background-color: #777777;
+  background-color: #195da2;
 }
 
 .slider_section .carousel_btn-container .carousel-control-prev {
@@ -360,18 +393,18 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #2e2b2b;
+  background-color: #07396b;
   color: #ffffff;
   border-radius: 30px;
   margin: 25px 0 45px 0;
 }
 
 .about_section .detail-box a:hover {
-  background-color: #777777;
+  background-color: #3b8cde;
 }
 
 .service_section {
-  background-color: #E1F4F3;
+  background-color: #85b7e9;
   color: #000000;
   text-align: center;
 }
@@ -440,13 +473,13 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #E1F4F3;
-  color: #000000;
+  background-color: #195da2;
+  color: #FFFFFF;
   border-radius: 30px;
 }
 
 .service_section .btn-box a:hover {
-  background-color: #E1F4F3;
+  background-color: #3b8cde;
 }
 
 .work_section .heading_container {
@@ -506,13 +539,13 @@ a:focus {
 .work_section .btn-box a {
   display: inline-block;
   padding: 10px 25px;
-  background-color: #E1F4F3;
-  color: #000000;
+  background-color: #195da2;
+  color: #FFFFFF;
   border-radius: 30px;
 }
 
 .work_section .btn-box a:hover {
-  background-color: #E1F4F3;
+  background-color: #3b8cde;
 }
 
 .team_section {
@@ -679,7 +712,6 @@ a:focus {
 }
 
 .footer_bg {
-  background-image: url(../images/4A4A4.png);
   background-size: cover;
   background-position: right top;
   padding-top: 250px;
@@ -724,7 +756,7 @@ a:focus {
 }
 
 .contact_section button:hover {
-  background-color: #5c5656;
+  background-color: #195da2;
   color: #ffffff;
 }
 
@@ -793,7 +825,7 @@ a:focus {
 }
 
 .info_section .info_links ul li a {
-  color: #9c9c9c;
+  color: #85b7e9;
   position: relative;
 }
 
@@ -903,5 +935,67 @@ a:focus {
 
 .footer_section a {
   color: #ffffff;
+}
+
+/* Estilo para a seção "Por que escolher a Escale+ Digital?" */
+.why_choose_us {
+  background-color: #00008B; /* Cor de fundo azul escuro do site */
+  color: #FFFFFF; /* Cor do texto branco */
+  text-align: center;
+  align-items: center;
+  padding: 75px 20px; /* Utilizando a classe layout_padding */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.why_choose_us .heading_container h2 {
+  font-family: 'Open Sauce Black', sans-serif; /* Fonte para títulos */
+  color: #FFFFFF; /* Cor do título branco */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center; /* Centraliza o título */
+}
+
+.why_choose_us .card {
+  background: none; /* Sem fundo */
+  box-shadow: none; /* Sem sombra */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.why_choose_us .card h3 {
+  font-family: 'Open Sauce Black', sans-serif; /* Fonte para subtítulos */
+  color: #FFFFFF; /* Cor dos subtítulos branco */
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.why_choose_us .card p {
+  font-family: 'Montserrat Regular', sans-serif; /* Fonte para textos */
+  color: #FFFFFF; /* Cor do texto branco */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Estilo do botão com animação */
+.why_choose_us .btn {
+  background-color: #195da2; /* Cor do botão azul escuro */
+  color: #FFFFFF; /* Cor do texto do botão branco */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-family: 'Montserrat Medium', sans-serif; /* Fonte para o botão */
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+.why_choose_us .btn:hover {
+  background-color: #3b8cde; /* Cor do botão ao passar o mouse (azul claro) */
+  transform: scale(1.1); /* Aumenta o botão levemente */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
 }
 /*# sourceMappingURL=style.css.map */
